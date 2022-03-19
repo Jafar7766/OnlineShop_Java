@@ -1,15 +1,12 @@
 package com.rajendra.onlinedailygroceries;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
-import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.rajendra.onlinedailygroceries.adapter.CategoryAdapter;
@@ -21,7 +18,7 @@ import com.rajendra.onlinedailygroceries.model.RecentlyViewed;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.ListIterator;
+
 
 import static com.rajendra.onlinedailygroceries.R.drawable.*;
 
@@ -113,6 +110,4 @@ public class MainActivity extends AppCompatActivity {
         recentlyViewedAdapter = new RecentlyViewedAdapter(this,recentlyViewedDataList);
         recentlyViewedRecycler.setAdapter(recentlyViewedAdapter);
     }
-    //Now again we need to create a adapter and model class for recently viewed items.
-    // lets do it fast.
 }
